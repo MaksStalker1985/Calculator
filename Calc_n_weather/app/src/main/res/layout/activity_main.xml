@@ -9,17 +9,12 @@
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="409dp"
+        android:layout_width="match_parent"
         android:layout_height="80dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="3dp"
-        android:layout_marginEnd="1dp"
-        android:layout_marginBottom="648dp"
+        android:layout_marginTop="102dp"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="1dp">
 
         <TextView
             android:id="@+id/textView"
@@ -29,6 +24,7 @@
             android:maxLength="15"
             android:minLines="1"
             android:text=""
+            android:textAlignment="textEnd"
             android:textColor="@color/white"
             android:textSize="44sp" />
     </LinearLayout>
@@ -37,7 +33,7 @@
         android:id="@+id/button_clear"
         android:layout_width="72dp"
         android:layout_height="72dp"
-        android:layout_marginStart="52dp"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="48dp"
         android:background="@color/black"
         android:foreground="@drawable/c"
@@ -49,7 +45,7 @@
         android:id="@+id/button_1"
         android:layout_width="72dp"
         android:layout_height="72dp"
-        android:layout_marginStart="52dp"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="11dp"
         android:background="@color/black"
         android:foreground="@drawable/one"
@@ -61,13 +57,11 @@
         android:id="@+id/button_0"
         android:layout_width="72dp"
         android:layout_height="73dp"
-        android:layout_marginStart="133dp"
+        android:layout_marginStart="100dp"
         android:layout_marginTop="13dp"
-        android:layout_marginBottom="197dp"
         android:background="@color/black"
         android:foreground="@drawable/zero"
         android:onClick="btn_zero_click"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_8" />
 
@@ -77,11 +71,9 @@
         android:layout_height="72dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="11dp"
-        android:layout_marginEnd="46dp"
         android:background="@color/black"
         android:foreground="@drawable/minus"
         android:onClick="btn_minus_click"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/button_3"
         app:layout_constraintTop_toBottomOf="@+id/button_plus" />
 
@@ -113,7 +105,7 @@
         android:id="@+id/button_4"
         android:layout_width="72dp"
         android:layout_height="72dp"
-        android:layout_marginStart="52dp"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="8dp"
         android:background="@color/black"
         android:foreground="@drawable/four"
@@ -139,11 +131,9 @@
         android:layout_height="72dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="10dp"
-        android:layout_marginEnd="46dp"
         android:background="@color/black"
         android:foreground="@drawable/slash"
         android:onClick="btn_divide_click"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/button_9"
         app:layout_constraintTop_toBottomOf="@+id/button_multiplie" />
 
@@ -187,7 +177,7 @@
         android:id="@+id/button_7"
         android:layout_width="72dp"
         android:layout_height="72dp"
-        android:layout_marginStart="52dp"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="10dp"
         android:background="@color/black"
         android:foreground="@drawable/seven"
@@ -201,13 +191,9 @@
         android:layout_height="72dp"
         android:layout_marginStart="88dp"
         android:layout_marginTop="13dp"
-        android:layout_marginEnd="46dp"
-        android:layout_marginBottom="198dp"
         android:background="@color/black"
         android:foreground="@drawable/equal"
         android:onClick="btn_equal_click"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/button_0"
         app:layout_constraintTop_toBottomOf="@+id/button_divide" />
 
@@ -229,11 +215,9 @@
         android:layout_height="72dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="46dp"
         android:background="@color/black"
         android:foreground="@drawable/asterisk"
         android:onClick="btn_multiple_click"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/button_6"
         app:layout_constraintTop_toBottomOf="@+id/button_minus" />
 
@@ -255,11 +239,9 @@
         android:layout_height="72dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="48dp"
-        android:layout_marginEnd="46dp"
         android:background="@color/black"
         android:foreground="@drawable/plus"
         android:onClick="btn_sum_click"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/button_sign"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
