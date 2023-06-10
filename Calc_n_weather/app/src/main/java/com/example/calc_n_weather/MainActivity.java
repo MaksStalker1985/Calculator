@@ -9,6 +9,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import java.text.DecimalFormat;
+
 public class MainActivity extends AppCompatActivity {
     /* Обьявление переменных */
     public TextView myTextView;
@@ -147,7 +149,10 @@ public class MainActivity extends AppCompatActivity {
             first_value = first_value / second_value;}
         }
         /* Выводим ответ в TextView */
-        myTextView.setText(String.valueOf(first_value));
+        DecimalFormat decimalFormat = new DecimalFormat();
+        decimalFormat.setDecimalSeparatorAlwaysShown(false);
+
+        myTextView.setText(String.valueOf(decimalFormat.format(first_value)));
     }
     /* Функция, вызывающаяся при нажатии на кнопку "C" */
     public void btn_erase_click(View view){

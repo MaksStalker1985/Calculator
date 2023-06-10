@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Calc_n_weather</string>
+    <string name="app_name">Simple Calculator</string>
     <string name="num_1" translatable="false">1</string>
     <string name="num_2" translatable="false">2</string>
     <string name="num_3" translatable="false">3</string>
